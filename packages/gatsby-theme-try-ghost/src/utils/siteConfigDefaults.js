@@ -36,4 +36,7 @@ module.exports = {
     // Overwrite navigation menu (default: []), label is case sensitive
     // overwriteGhostNavigation: [{ label: `Home`, url: `/` }],
 
+    // Theme UI (default: `casper`)
+    themeUI: `casper`,
+
 }

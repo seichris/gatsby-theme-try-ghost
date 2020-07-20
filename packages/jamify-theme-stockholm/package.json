@@ -1,0 +1,45 @@
+{
+    "name": "jamify-theme-stockholm",
+    "description": "Stockholm Theme for Jamify",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "styxlab",
+    "homepage": "https://github.com/styxlab/",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/jamify-theme-stockholm"
+    },
+    "bugs": {
+        "url": "https://github.com/styxlab/gatsby-theme-try-ghost/issues"
+    },
+    "keywords": [
+        "gatsby",
+        "gatsby-plugin",
+        "gatsby-theme",
+        "gatsby-theme-try-ghost",
+        "stockholm",
+        "skin",
+        "skin-stockholm",
+        "theme-stockholm",
+        "jamify",
+        "jamify-theme",
+        "jamify-theme-stockholm",
+        "ghost",
+        "ghost-cms",
+        "ghost-theme",
+        "ghost-theme-stockholm",
+        "hackersandslackers"
+    ],
+    "dependencies": {
+        "@babel/runtime": "^7.10.5",
+        "gatsby-plugin-less": "^4.0.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.10.5",
+        "@babel/core": "^7.10.5",
+        "babel-preset-gatsby-package": "^0.5.2",
+        "cross-env": "^7.0.2",
+        "gatsby": "^2.24.3"
+    }
+}

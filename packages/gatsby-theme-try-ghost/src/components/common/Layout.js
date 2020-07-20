@@ -16,6 +16,9 @@ import '../../styles/pagination.css'
 import '../../styles/prism.css'
 import '../../styles/toc.css'
 
+// Theme UI Stockhom (experimental)
+import '../../styles/app.less'
+
 /**
 * Main layout component
 *
@@ -40,7 +43,7 @@ const DefaultLayout = ({ data, header, children, isHome, isPost, sticky, preview
     return (
         <React.Fragment>
             {/* Dark Mode shadows DocumentHead */}
-            <DocumentHead site={site} className={bodyClass} action={action} />
+            <DocumentHead site={site} className={bodyClass} action={action} themeUI={config.themeUI} />
 
             <div className="site-wrapper">
                 {/* The main header section on top of the screen */}

@@ -1,0 +1,234 @@
+@import '../variables.less';
+@import '../mixins.less';
+
+.page-template {
+  .page-content {
+    h1 {
+      margin: 10px 0 25px 0;
+      color: @header-font-color;
+      font-family: @body-font-book;
+      font-size: 2.5em;
+      font-weight: normal;
+    }
+
+    h3 {
+      .body-h3();
+    }
+
+    .page-wrapper {
+      @media (max-width: @tablet-breakpoint) {
+        width: auto;
+        margin: 0 30px;
+      }
+      @media (max-width: @mobile-breakpoint) {
+        width: -webkit-fill-available;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .content-body p,
+      & > p {
+        .body-font();
+        margin: 0 0 25px;
+
+        a {
+          .link()
+        }
+      }
+
+      .content-body ul,
+      & > ul {
+        .lists();
+      }
+    }
+
+    .input-field-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    input,
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px 10px;
+      outline: 0;
+      font-family: @body-font;
+      font-size: 14px;
+      transition: @transition;
+      .input-text-fields();
+    }
+
+    textarea {
+      height: 200px;
+    }
+  }
+
+  .info-card {
+    .info-card();
+  }
+
+  .container {
+    width: 1020px;
+    max-width: 95%;
+    margin: auto;
+    @media (max-width: @mobile-breakpoint) {
+      max-width: 100%;
+    }
+
+    .page-content {
+      padding: 60px;
+      @media (max-width: @tablet-breakpoint) {
+        padding: 40px;
+      }
+    }
+
+
+    .viewport {
+      @media (max-width: @tablet-breakpoint) {
+        padding-bottom: 0;
+      }
+      @media (max-width: @mobile-breakpoint) {
+        margin: 0 auto !important;
+      }
+    }
+
+    .nav-wrapper {
+      max-width: 870px;
+    }
+  }
+
+  .navigation {
+    @media (max-width: @mobile-breakpoint) {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .viewport {
+    .header-card {
+      margin: 0 !important;
+      padding: 40px;
+      background: white;
+      @media (max-width: @mobile-breakpoint) {
+        .mobile-full-width();
+      }
+    }
+
+    .page-content {
+      width: -webkit-fill-available;
+      width: -moz-available;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: white;
+      box-shadow: 0 1px 4px rgba(39, 44, 49, .07);
+      @media (max-width: @tablet-breakpoint) {
+        max-width: unset;
+        padding: 30px 0;
+      }
+
+      .page-content li,
+      .page-content p {
+        text-align: left;
+        .body-font();
+      }
+
+      .page-content ul {
+        margin: 0 0 30px 20px;
+        padding-left: 1em;
+      }
+
+      fieldset {
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+        border: none;
+        background: white;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .active {
+        display: block;
+      }
+
+      & > li,
+      & > p {
+        text-align: left;
+        .body-font();
+
+        a {
+         color: #6baaf2;
+         font-family: @body-font-bold;
+         transition: @transition;
+       }
+      }
+
+      hr {
+        margin: 1.8em 0 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 2px;
+        color: #71757b;
+        font-family: @body-font-bold;
+        font-size: .9em;
+
+        svg {
+          margin-right: 3px;
+        }
+      }
+
+
+      .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+      }
+
+      .message a {
+        color: #4CAF50;
+        text-decoration: none;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        border: 1px solid #6baaf2;
+        border-radius: 3px;
+        outline: 0;
+        font-family: @body-font-bold;
+        text-transform: uppercase;
+        font-size: 1em;
+        .button-styles();
+      }
+    }
+  }
+}
+
+.page-template {
+  .navigation {
+    @media (max-width: @mobile-breakpoint) {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .sidebar-container {
+    @media (max-width: @tablet-breakpoint) {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    .page-content {
+      @media (max-width: 900px) {
+        max-width: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}

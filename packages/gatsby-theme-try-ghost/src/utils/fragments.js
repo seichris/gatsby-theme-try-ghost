@@ -22,6 +22,7 @@ export const siteMetadataFields = graphql`
         siteIcon
         backgroundColor
         themeColor
+        themeUI
         overwriteGhostNavigation {
             label
             url
