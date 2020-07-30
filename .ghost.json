@@ -5,6 +5,6 @@
     },
     "production": {
         "apiUrl": "https://kontextblog.herokuapp.com",
-        "contentApiKey": "3a0954d49cd42fef64d8cdf207"
+        "contentApiKey": "20a4b19686541fc36df6f52c2c"
     }
 }
